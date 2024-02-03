@@ -1,0 +1,6 @@
+Package: ridenum
+Version: 1.7.1
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: Rid Enum is a RID cycling attack that attempts to enumerate user accounts through null sessions and the SID to RID enum.

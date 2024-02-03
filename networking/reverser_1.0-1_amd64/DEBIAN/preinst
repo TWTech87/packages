@@ -1,0 +1,3 @@
+rm -f /usr/bin/reverser
+rm -rf /opt/snoopgod/networking/reverser/
+rm -f /usr/share/applications/blackbuntu-reverser.desktop

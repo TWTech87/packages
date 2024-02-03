@@ -1,0 +1,3 @@
+rm -f /usr/bin/hurl
+rm -rf /opt/snoopgod/web-applications/hurl/
+rm -f /usr/share/applications/blackbuntu-hurl.desktop

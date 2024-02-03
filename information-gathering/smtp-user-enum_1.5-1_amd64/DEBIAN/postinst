@@ -1,0 +1,3 @@
+mkdir -p /opt/snoopgod/information-gathering/
+chmod +x /opt/snoopgod/information-gathering/smtp-user-enum/smtp-user-enum.pl
+ln -s /opt/snoopgod/information-gathering/smtp-user-enum/smtp-user-enum.pl /usr/bin/smtp-user-enum

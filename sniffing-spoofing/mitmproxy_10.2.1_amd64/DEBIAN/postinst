@@ -1,0 +1,3 @@
+mkdir -p /opt/snoopgod/sniffing-spoofing/
+chmod +x /opt/snoopgod/sniffing-spoofing/mitmproxy/mitmproxy
+ln -s /opt/snoopgod/sniffing-spoofing/mitmproxy/mitmproxy /usr/bin/mitmproxy

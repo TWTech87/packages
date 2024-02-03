@@ -1,0 +1,3 @@
+mkdir -p /opt/snoopgod/cracking/
+chmod +x /opt/snoopgod/cracking/crowbar/crowbar.py
+ln -s /opt/snoopgod/cracking/crowbar/crowbar.py /usr/bin/crowbar

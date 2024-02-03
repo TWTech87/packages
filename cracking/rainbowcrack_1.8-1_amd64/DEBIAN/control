@@ -1,0 +1,6 @@
+Package: rainbowcrack
+Version: 1.8.1
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: RainbowCrack is a general propose implementation of Philippe Oechslin's faster time-memory trade-off technique.

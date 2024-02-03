@@ -1,0 +1,3 @@
+rm -f /usr/bin/subbrute
+rm -rf /opt/snoopgod/utilities/subbrute/
+rm -f /usr/share/applications/blackbuntu-subbrute.desktop

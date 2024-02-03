@@ -1,0 +1,6 @@
+Package: thc-ssl-dos
+Version: 1.4.1
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: THC-SSL-DOS is a tool to verify the performance of SSL.

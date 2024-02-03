@@ -1,0 +1,6 @@
+Package: ddrescue
+Version: 1.99.13
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: Ddrescue copies data from one file (or device or pipe) to others.

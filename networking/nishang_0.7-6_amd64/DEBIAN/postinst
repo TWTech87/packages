@@ -1,0 +1,3 @@
+mkdir -p /opt/snoopgod/networking/
+chmod +x /opt/snoopgod/networking/nishang/nishang
+ln -s /opt/snoopgod/networking/nishang/nishang /usr/bin/nishang

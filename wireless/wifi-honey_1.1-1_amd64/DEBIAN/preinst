@@ -1,0 +1,3 @@
+rm -f /usr/bin/wifi-honey
+rm -rf /opt/snoopgod/wireless/wifi-honey/
+rm -f /usr/share/applications/blackbuntu-wifi-honey.desktop

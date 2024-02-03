@@ -1,0 +1,6 @@
+Package: pdfid
+Version: 0.2.4
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: PDFiD will scan a file to look for certain PDF keywords, allowing you to identify PDF documents that contain (for example) JavaScript or execute an action when opened.

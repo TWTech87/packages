@@ -1,0 +1,6 @@
+Package: udpflood
+Version: 1.1.1
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: A command line tool used to flood any device that is processing UDP.

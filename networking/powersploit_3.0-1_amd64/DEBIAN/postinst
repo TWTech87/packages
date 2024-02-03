@@ -1,0 +1,3 @@
+mkdir -p /opt/snoopgod/networking/
+chmod +x /opt/snoopgod/networking/powersploit/powersploit
+ln -s /opt/snoopgod/networking/powersploit/powersploit /usr/bin/powersploit

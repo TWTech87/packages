@@ -1,0 +1,3 @@
+mkdir -p /opt/snoopgod/web-applications/
+chmod +x /opt/snoopgod/web-applications/cmsmap/cmsmap.py
+ln -s /opt/snoopgod/web-applications/cmsmap/cmsmap.py /usr/bin/cmsmap

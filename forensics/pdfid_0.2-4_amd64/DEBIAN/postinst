@@ -1,0 +1,3 @@
+mkdir -p /opt/snoopgod/forensics/
+chmod +x /opt/snoopgod/forensics/pdfid/pdfid.py
+ln -s /opt/snoopgod/forensics/pdfid/pdfid.py /usr/bin/pdfid

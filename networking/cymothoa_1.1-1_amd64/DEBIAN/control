@@ -1,0 +1,6 @@
+Package: cymothoa
+Version: 1.1.1
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: Cymothoa is a stealth backdooring tool, that inject backdoor's shellcode into an existing process.

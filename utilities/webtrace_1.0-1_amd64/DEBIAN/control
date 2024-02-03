@@ -1,0 +1,6 @@
+Package: webtrace
+Version: 1.0.1
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: Trace web redirection easily.

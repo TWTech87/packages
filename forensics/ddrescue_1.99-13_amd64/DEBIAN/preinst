@@ -1,0 +1,3 @@
+rm -f /usr/bin/ddrescue
+rm -rf /opt/snoopgod/forensics/ddrescue/
+rm -f /usr/share/applications/blackbuntu-ddrescue.desktop

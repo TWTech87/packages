@@ -1,0 +1,2 @@
+mkdir -p /opt/snoopgod/web-applications/
+chmod +x /opt/snoopgod/web-applications/dirbuster/dirbuster.jar

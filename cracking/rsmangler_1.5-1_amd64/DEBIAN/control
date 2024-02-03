@@ -1,0 +1,6 @@
+Package: rsmangler
+Version: 1.5.1
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: RSMangler will take a wordlist and perform various manipulations on it.

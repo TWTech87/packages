@@ -1,0 +1,3 @@
+mkdir -p /opt/snoopgod/forensics/
+chmod +x /opt/snoopgod/forensics/pdf-parser/pdf-parser.py
+ln -s /opt/snoopgod/forensics/pdf-parser/pdf-parser.py /usr/bin/pdf-parser

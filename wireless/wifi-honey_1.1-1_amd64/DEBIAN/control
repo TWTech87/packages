@@ -1,0 +1,6 @@
+Package: wifi-honey
+Version: 1.1.1
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description:  In the case of WPA/WPA2, by running airodump-ng along side this you also end up capturing the first two packets of the four way handshake and so can attempt to crack the key with either aircrack-ng or cowpatty.

@@ -1,0 +1,6 @@
+Package: dirbuster
+Version: 1.0.1
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: DirBuster is a multi threaded java application designed to brute force directories and files names on web/application servers.

@@ -1,0 +1,3 @@
+mkdir -p /opt/snoopgod/networking/
+chmod +x /opt/snoopgod/networking/reverser/reverser.sh
+ln -s /opt/snoopgod/networking/reverser/reverser.sh /usr/bin/reverser

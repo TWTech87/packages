@@ -1,0 +1,3 @@
+rm -f /usr/bin/cmsmap
+rm -rf /opt/snoopgod/web-applications/cmsmap/
+rm -f /usr/share/applications/blackbuntu-cmsmap.desktop

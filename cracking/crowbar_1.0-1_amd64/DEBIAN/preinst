@@ -1,0 +1,3 @@
+rm -f /usr/bin/crowbar
+rm -rf /opt/snoopgod/cracking/crowbar/
+rm -f /usr/share/applications/blackbuntu-crowbar.desktop

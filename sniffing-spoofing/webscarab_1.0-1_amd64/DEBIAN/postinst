@@ -1,0 +1,2 @@
+mkdir -p /opt/snoopgod/sniffing-spoofing/
+chmod +x /opt/snoopgod/sniffing-spoofing/webscarab/webscarab.jar

@@ -1,0 +1,3 @@
+mkdir -p /opt/snoopgod/stress-testing/
+chmod +x /opt/snoopgod/stress-testing/iaxflood/compile.sh
+ln -s /opt/snoopgod/stress-testing/iaxflood/compile.sh /usr/bin/iaxflood

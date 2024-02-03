@@ -1,0 +1,6 @@
+Package: jad
+Version: 1.5.8
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: Jad has been the most popular Java decompiler ever written.

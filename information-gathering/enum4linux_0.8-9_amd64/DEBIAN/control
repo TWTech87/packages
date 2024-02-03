@@ -1,0 +1,6 @@
+Package: enum4linux
+Version: 0.8.9
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: Enum4linux is a tool for enumerating information from Windows and Samba systems.

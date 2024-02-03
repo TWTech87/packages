@@ -1,0 +1,6 @@
+Package: webscarab
+Version: 1.0.1
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: WebScarab is designed to be a tool for anyone who needs to expose the workings of an HTTP(S) based application.

@@ -1,0 +1,3 @@
+mkdir -p /opt/snoopgod/wireless/
+chmod +x /opt/snoopgod/wireless/wps-breaker/wps-breaker.sh
+ln -s /opt/snoopgod/wireless/wps-breaker/wps-breaker.sh /usr/bin/wps-breaker

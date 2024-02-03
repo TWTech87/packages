@@ -1,0 +1,6 @@
+Package: wps-breaker
+Version: 1.1.1
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: WPS Breaker is a small tool based on the bash script language, it can help you to extract the wps pin of many vulnerable routers and get the password.

@@ -1,0 +1,3 @@
+mkdir -p /opt/snoopgod/information-gathering/
+chmod +x /opt/snoopgod/information-gathering/gnmap/gnmap.sh
+ln -s /opt/snoopgod/information-gathering/gnmap/gnmap.sh /usr/bin/gnmap

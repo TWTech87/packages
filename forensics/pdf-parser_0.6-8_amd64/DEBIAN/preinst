@@ -1,0 +1,3 @@
+rm -f /usr/bin/pdf-parser
+rm -rf /opt/snoopgod/forensics/pdf-parser/
+rm -f /usr/share/applications/blackbuntu-pdf-parser.desktop

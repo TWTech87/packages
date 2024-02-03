@@ -1,0 +1,3 @@
+mkdir -p /opt/snoopgod/utilities/
+chmod +x /opt/snoopgod/utilities/ridenum/ridenum.py
+ln -s /opt/snoopgod/utilities/ridenum/ridenum.py /usr/bin/ridenum

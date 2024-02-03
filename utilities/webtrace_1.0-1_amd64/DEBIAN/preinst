@@ -1,0 +1,3 @@
+rm -f /usr/bin/webtrace
+rm -rf /opt/snoopgod/utilities/webtrace/
+rm -f /usr/share/applications/blackbuntu-webtrace.desktop

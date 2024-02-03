@@ -1,0 +1,3 @@
+mkdir -p /opt/snoopgod/cracking/
+chmod +x /opt/snoopgod/cracking/gpp-decrypt/gpp-decrypt.rb
+ln -s /opt/snoopgod/cracking/gpp-decrypt/gpp-decrypt.rb /usr/bin/gpp-decrypt

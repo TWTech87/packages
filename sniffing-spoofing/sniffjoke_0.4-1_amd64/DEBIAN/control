@@ -1,0 +1,6 @@
+Package: sniffjoke
+Version: 0.4.1
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: SniffJoke is an application for Linux that handle transparently your TCP connection, delaying, modifying and inject fake packets inside your transmission.

@@ -1,0 +1,6 @@
+Package: smtp-user-enum
+Version: 1.5.1
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: Username guessing tool primarily for use against the default Solaris SMTP service.

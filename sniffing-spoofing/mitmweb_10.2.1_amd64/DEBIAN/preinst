@@ -1,0 +1,4 @@
+rm -f /usr/bin/mitmweb
+rm -rf /opt/snoopgod/sniffing-spoofing/mitmweb/
+rm -f /usr/share/applications/blackbuntu-mitmweb.desktop
+rm -f /usr/share/icons/snoopgod/mitmweb.png

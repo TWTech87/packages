@@ -1,0 +1,3 @@
+rm -f /usr/bin/linenum
+rm -rf /opt/snoopgod/information-gathering/linenum/
+rm -f /usr/share/applications/blackbuntu-linenum.desktop

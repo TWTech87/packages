@@ -1,0 +1,3 @@
+mkdir -p /opt/snoopgod/cracking/
+chmod +x /opt/snoopgod/cracking/rsmangler/rsmangler.rb
+ln -s /opt/snoopgod/cracking/rsmangler/rsmangler.rb /usr/bin/rsmangler

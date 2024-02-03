@@ -1,0 +1,6 @@
+Package: dracnmap
+Version: 2.2.1
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: Dracnmap is an open source program which is using to exploit the network and gathering information with nmap help.

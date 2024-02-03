@@ -1,0 +1,3 @@
+rm -f /usr/bin/udpflood
+rm -rf /opt/snoopgod/stress-testing/udpflood/
+rm -f /usr/share/applications/blackbuntu-udpflood.desktop

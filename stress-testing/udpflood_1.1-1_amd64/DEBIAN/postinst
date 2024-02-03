@@ -1,0 +1,3 @@
+mkdir -p /opt/snoopgod/stress-testing/
+chmod +x /opt/snoopgod/stress-testing/udpflood/compile.sh
+ln -s /opt/snoopgod/stress-testing/udpflood/compile.sh /usr/bin/udpflood

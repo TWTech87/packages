@@ -1,0 +1,3 @@
+mkdir -p /opt/snoopgod/information-gathering/
+chmod +x /opt/snoopgod/information-gathering/lbd/lbd
+ln -s /opt/snoopgod/information-gathering/lbd/lbd /usr/bin/lbd

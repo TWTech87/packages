@@ -1,0 +1,6 @@
+Package: subbrute
+Version: 2.1.1
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: SubBrute is a community driven project with the goal of creating the fastest, and most accurate subdomain enumeration tool.

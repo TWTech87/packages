@@ -1,0 +1,13 @@
+mkdir -p /opt/snoopgod/cracking/
+chmod +x /opt/snoopgod/cracking/rainbowcrack/rcrack
+chmod +x /opt/snoopgod/cracking/rainbowcrack/rt2rtc
+chmod +x /opt/snoopgod/cracking/rainbowcrack/rtc2rt
+chmod +x /opt/snoopgod/cracking/rainbowcrack/rtgen
+chmod +x /opt/snoopgod/cracking/rainbowcrack/rtmerge
+chmod +x /opt/snoopgod/cracking/rainbowcrack/rtsort
+ln -s /opt/snoopgod/cracking/rainbowcrack/rcrack /usr/bin/rcrack
+ln -s /opt/snoopgod/cracking/rainbowcrack/rt2rtc /usr/bin/rt2rtc
+ln -s /opt/snoopgod/cracking/rainbowcrack/rtc2rt /usr/bin/rtc2rt
+ln -s /opt/snoopgod/cracking/rainbowcrack/rtgen /usr/bin/rtgen
+ln -s /opt/snoopgod/cracking/rainbowcrack/rtmerge /usr/bin/rtmerge
+ln -s /opt/snoopgod/cracking/rainbowcrack/rtsort /usr/bin/rtsort

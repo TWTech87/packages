@@ -1,0 +1,6 @@
+Package: hurl
+Version: 2.0.1
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: Hurl is an hexadecimal package URL encoder / decoder.

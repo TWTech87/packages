@@ -1,0 +1,4 @@
+rm -f /usr/bin/mitmdump
+rm -rf /opt/snoopgod/sniffing-spoofing/mitmdump/
+rm -f /usr/share/applications/blackbuntu-mitmdump.desktop
+rm -f /usr/share/icons/snoopgod/mitmdump.png

@@ -1,0 +1,6 @@
+Package: dumpzilla
+Version: 1.0.1
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: Dumpzilla has as purpose extract all forensic interesting information of Firefox, Iceweasel and Seamonkey browsers to be analyzed.

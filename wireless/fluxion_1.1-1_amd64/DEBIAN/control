@@ -1,0 +1,6 @@
+Package: fluxion
+Version: 1.1.1
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: Fluxion is a security auditing and social-engineering research tool.

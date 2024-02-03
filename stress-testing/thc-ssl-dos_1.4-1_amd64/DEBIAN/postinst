@@ -1,0 +1,3 @@
+mkdir -p /opt/snoopgod/stress-testing/
+chmod +x /opt/snoopgod/stress-testing/thc-ssl-dos/compile.sh
+ln -s /opt/snoopgod/stress-testing/thc-ssl-dos/compile.sh /usr/bin/thc-ssl-dos

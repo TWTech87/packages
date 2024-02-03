@@ -1,0 +1,3 @@
+rm -f /usr/bin/ridenum
+rm -rf /opt/snoopgod/utilities/ridenum/
+rm -f /usr/share/applications/blackbuntu-ridenum.desktop

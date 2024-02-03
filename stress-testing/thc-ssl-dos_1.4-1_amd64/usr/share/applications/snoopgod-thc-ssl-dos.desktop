@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Categories=Stress Testing;
+Exec=sh -c 'thc-ssl-dos -h; $SHELL'
+Icon=/usr/share/icons/snoopgod/default.png
+Name=THC SSL-Dos
+Terminal=true
+Type=Application

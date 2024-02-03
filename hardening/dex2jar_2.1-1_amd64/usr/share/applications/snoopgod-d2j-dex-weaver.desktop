@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Categories=Hardening;
+Exec=sh -c 'd2j-dex-weaver --help; $SHELL'
+Icon=/usr/share/icons/snoopgod/default.png
+Name=D2J Dex Weaver
+Terminal=true
+Type=Application

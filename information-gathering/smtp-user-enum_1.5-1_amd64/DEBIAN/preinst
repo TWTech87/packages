@@ -1,0 +1,3 @@
+rm -f /usr/bin/smtp-user-enum
+rm -rf /opt/snoopgod/information-gathering/smtp-user-enum/
+rm -f /usr/share/applications/blackbuntu-smtp-user-enum.desktop

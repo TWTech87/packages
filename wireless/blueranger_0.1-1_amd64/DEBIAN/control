@@ -1,0 +1,6 @@
+Package: blueranger
+Version: 0.1.1
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: BlueRanger is a simple Bash script which uses Link Quality to locate Bluetooth device radios.
