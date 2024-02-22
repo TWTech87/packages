@@ -44,7 +44,6 @@ Official packages repository of SnoopGod Linux operating system
 #### Information Gathering
 
 - [enum4linux](http://www.portcullis-security.com/)
-- [fierce](https://github.com/mschwager/fierce)
 - [gnmap](https://github.com/themightyshiv/gnmap)
 - [lbd](http://ge.mine.nu/code/)
 - [linenum](https://github.com/rebootuser/LinEnum)

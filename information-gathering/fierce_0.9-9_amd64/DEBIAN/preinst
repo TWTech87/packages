@@ -1,3 +1,0 @@
-rm -f /usr/bin/fierce
-rm -rf /opt/snoopgod/information-gathering/fierce/
-rm -f /usr/share/applications/blackbuntu-fierce.desktop
