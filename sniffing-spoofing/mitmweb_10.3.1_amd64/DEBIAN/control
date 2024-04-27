@@ -1,0 +1,6 @@
+Package: mitmweb
+Version: 10.3.1
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: Mitmweb is your swiss-army knife for debugging, testing, privacy measurements, and penetration testing.

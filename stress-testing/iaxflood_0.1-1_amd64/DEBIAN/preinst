@@ -1,3 +1,3 @@
 rm -f /usr/bin/iaxflood
 rm -rf /opt/snoopgod/stress-testing/iaxflood/
-rm -f /usr/share/applications/blackbuntu-iaxflood.desktop
+rm -f /usr/share/applications/snoopgod-iaxflood.desktop

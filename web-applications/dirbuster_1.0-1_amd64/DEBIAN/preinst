@@ -1,2 +1,2 @@
 rm -rf /opt/snoopgod/web-applications/dirbuster/
-rm -f /usr/share/applications/blackbuntu-dirbuster.desktop
+rm -f /usr/share/applications/snoopgod-dirbuster.desktop

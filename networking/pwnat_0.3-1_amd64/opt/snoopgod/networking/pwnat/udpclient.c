@@ -26,7 +26,7 @@
 #include <time.h>
 #include <sys/types.h>
 
-#ifndef WIN32
+#ifndef _WIN32
 #include <unistd.h>
 #include <sys/time.h>
 #include <sys/select.h>
@@ -115,39 +115,47 @@ int udpclient(int argc, char* argv[])
     i = 0;    
     if (!isnumber(argv[i]))
         lhost = argv[i++];
-    else	
+    else    
         lhost = NULL;
     lport = argv[i++];
     phost = argv[i++];
     if (isnumber(argv[i]))
         pport = argv[i++];
-    else	
+    else    
         pport = pport_s;
     rhost = argv[i++];
     rport = argv[i++];
 
     /* Get address from the machine */
-	rsrc.sin_family = PF_INET;
-	rsrc.sin_addr.s_addr = INADDR_ANY;
-	if (lhost)
-	{
-		hp = gethostbyname(lhost);
-		memcpy(&rsrc.sin_addr, hp->h_addr, hp->h_length); 
-		inet_pton(AF_INET, lhost, &(rsrc.sin_addr));
-	}
+    rsrc.sin_family = PF_INET;
+    rsrc.sin_addr.s_addr = INADDR_ANY;
+    if (lhost)
+    {
+        hp = gethostbyname(lhost);
+        memcpy(&rsrc.sin_addr, hp->h_addr, hp->h_length); 
+        inet_pton(AF_INET, lhost, &(rsrc.sin_addr));
+    }
 
-	/* IP of destination */
-	memset(&src, 0, sizeof(struct sockaddr_in));
-	hp					  = gethostbyname(phost);
-	timeexc_ip            = *(uint32_t*)hp->h_addr_list[0];
-	src.sin_family        = AF_INET;
-	src.sin_port          = 0;
-	src.sin_addr.s_addr   = timeexc_ip;
+    /* IP of destination */
+    memset(&src, 0, sizeof(struct sockaddr_in));
+    hp = gethostbyname(phost);
+    if (!hp) {
+        #ifndef _WIN32
+            printf("Couldn't resolve server address: '%s': %s\n", phost, hstrerror(h_errno));
+        #else
+            printf("Couldn't resolve server address: '%s': %s\n", phost, WSAGetLastError(h_errno));
+        #endif
+        return 1;
+    }
+    timeexc_ip            = *(uint32_t*)hp->h_addr_list[0];
+    src.sin_family        = AF_INET;
+    src.sin_port          = 0;
+    src.sin_addr.s_addr   = timeexc_ip;
 
     /* IP of where the fake packet (echo request) was going */
-	hp = gethostbyname("3.3.3.3");
-	memcpy(&dest.sin_addr, hp->h_addr, hp->h_length); 
-	inet_pton(AF_INET, "3.3.3.3", &(dest.sin_addr));
+    hp = gethostbyname("3.3.3.3");
+    memcpy(&dest.sin_addr, hp->h_addr, hp->h_length); 
+    inet_pton(AF_INET, "3.3.3.3", &(dest.sin_addr));
  
     srand(time(NULL));
     next_req_id = rand() % 0xffff;
@@ -180,7 +188,7 @@ int udpclient(int argc, char* argv[])
     gettimeofday(&check_time, NULL);
     
     /* open raw socket */
-	icmp_sock = create_icmp_socket();
+    icmp_sock = create_icmp_socket();
     if (icmp_sock == -1) {
         printf("[main] can't open raw socket\n");
         exit(1);
@@ -191,11 +199,11 @@ int udpclient(int argc, char* argv[])
         if(!timerisset(&timeout))
             timeout.tv_usec = 50000;
 
-		if (timeexc++ % 100 == 0)
-		{
-			/* Send ICMP TTL exceeded to penetrate remote NAT */
-			send_icmp(icmp_sock, &rsrc, &src, &dest, 0);
-		}
+        if (timeexc++ % 100 == 0)
+        {
+            /* Send ICMP TTL exceeded to penetrate remote NAT */
+            send_icmp(icmp_sock, &rsrc, &src, &dest, 0);
+        }
 
         read_fds = client_fds;
         FD_SET(SOCK_FD(tcp_serv), &read_fds);
@@ -338,12 +346,12 @@ int udpclient(int argc, char* argv[])
                     ret = client_send_udp_data(client);
 #if 0 /* if udptunnel is taking up 100% of cpu, try including this */
                 else if(ret == 1)
-#ifdef WIN32
+#ifdef _WIN32
                     _sleep(1);
 #else
                     usleep(1000); /* Quick hack so doesn't use 100% of CPU if
                                      data wasn't ready yet (waiting for ack) */
-#endif /*WIN32*/
+#endif /*_WIN32*/
 #endif /*0*/          
                 
                 if(ret < 0)

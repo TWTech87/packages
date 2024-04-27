@@ -1,2 +1,2 @@
 rm -rf /opt/snoopgod/reverse-engineering/javasnoop/
-rm -f /usr/share/applications/blackbuntu-javasnoop.desktop
+rm -f /usr/share/applications/snoopgod-javasnoop.desktop

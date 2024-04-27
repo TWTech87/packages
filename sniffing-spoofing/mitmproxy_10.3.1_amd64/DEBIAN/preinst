@@ -1,0 +1,4 @@
+rm -f /usr/bin/mitmproxy
+rm -rf /opt/snoopgod/sniffing-spoofing/mitmproxy/
+rm -f /usr/share/applications/snoopgod-mitmproxy.desktop
+rm -f /usr/share/icons/snoopgod/mitmproxy.png

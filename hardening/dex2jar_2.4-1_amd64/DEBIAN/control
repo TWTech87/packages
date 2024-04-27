@@ -1,0 +1,6 @@
+Package: dex2jar
+Version: 2.4.1
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: Tools to work with android .dex and java .class files.

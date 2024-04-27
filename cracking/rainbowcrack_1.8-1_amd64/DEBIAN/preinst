@@ -5,9 +5,9 @@ rm -f /usr/bin/rtgen
 rm -f /usr/bin/rtmerge
 rm -f /usr/bin/rtsort
 rm -rf /opt/snoopgod/cracking/rainbowcrack/
-rm -f /usr/share/applications/blackbuntu-rcrack.desktop
-rm -f /usr/share/applications/blackbuntu-rt2rtc.desktop
-rm -f /usr/share/applications/blackbuntu-rtc2rt.desktop
-rm -f /usr/share/applications/blackbuntu-rtgen.desktop
-rm -f /usr/share/applications/blackbuntu-rtmerge.desktop
-rm -f /usr/share/applications/blackbuntu-rtsort.desktop
+rm -f /usr/share/applications/snoopgod-rcrack.desktop
+rm -f /usr/share/applications/snoopgod-rt2rtc.desktop
+rm -f /usr/share/applications/snoopgod-rtc2rt.desktop
+rm -f /usr/share/applications/snoopgod-rtgen.desktop
+rm -f /usr/share/applications/snoopgod-rtmerge.desktop
+rm -f /usr/share/applications/snoopgod-rtsort.desktop

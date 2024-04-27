@@ -1,3 +1,0 @@
-rm -f /usr/bin/phoneinfoga
-rm -rf /opt/snoopgod/information-gathering/phoneinfoga/
-rm -f /usr/share/applications/blackbuntu-phoneinfoga.desktop

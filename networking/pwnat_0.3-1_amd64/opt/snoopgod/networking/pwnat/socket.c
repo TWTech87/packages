@@ -24,13 +24,13 @@
 #include <string.h>
 #include <sys/types.h>
 
-#ifndef WIN32
+#ifndef _WIN32
 #include <unistd.h>
 #include <inttypes.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <netdb.h>
-#endif /*WIN32*/
+#endif /*_WIN32*/
 
 #include "socket.h"
 #include "common.h"
@@ -151,9 +151,13 @@ int sock_connect(socket_t *sock, int is_serv, char *port)
 	sa.sin_port = htons(atoi(port));
 	sa.sin_addr.s_addr = htonl(INADDR_ANY);
 
-    setsockopt(sock->fd, SOL_SOCKET, SO_REUSEADDR, &reuseaddr, sizeof(int));
-    setsockopt(sock->fd, SOL_SOCKET, SO_REUSEPORT, &reuseport, sizeof(int));
- 
+#ifdef SO_REUSEADDR
+  setsockopt(sock->fd, SOL_SOCKET, SO_REUSEADDR, &reuseaddr, sizeof(int));
+#endif
+#ifdef SO_REUSEPORT
+  setsockopt(sock->fd, SOL_SOCKET, SO_REUSEPORT, &reuseport, sizeof(int));
+#endif
+
 	if(sock->type == SOCK_DGRAM)
 		if( bind(sock->fd, (const struct sockaddr *)&sa, sizeof(struct sockaddr_in))!= 0)
 			printf("Bind failed\n");
@@ -231,7 +235,7 @@ void sock_close(socket_t *s)
 {
     if(s->fd != -1)
     {
-#ifdef WIN32
+#ifdef _WIN32
         closesocket(s->fd);
 #else
         close(s->fd);
@@ -253,7 +257,7 @@ void sock_free(socket_t *s)
  * store result in buf, which len must be at least INET6_ADDRLEN + 6. Returns a
  * pointer to buf. String will be in the form of "ip_address:port".
  */
-#ifdef WIN32
+#ifdef _WIN32
 char *sock_get_str(socket_t *s, char *buf, int len)
 {
     /* WSAAddressToString() gets the port also, so just call get_addrstr()
@@ -291,13 +295,13 @@ char *sock_get_str(socket_t *s, char *buf, int len)
     
     return buf;
 }
-#endif /*WIN32*/
+#endif /*_WIN32*/
 
 /*
  * Gets the string representation of the IP address and puts it in buf. Will
  * return the pointer to buf or NULL if there was an error.
  */
-#ifdef WIN32
+#ifdef _WIN32
 char *sock_get_addrstr(socket_t *s, char *buf, int len)
 {
     DWORD plen = len;
@@ -334,7 +338,7 @@ char *sock_get_addrstr(socket_t *s, char *buf, int len)
 
     return buf;
 }
-#endif /*WIN32*/
+#endif /*_WIN32*/
 
 /*
  * Returns the 16-bit port number in host byte order from the passed sockaddr.

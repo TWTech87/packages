@@ -1,4 +1,4 @@
 rm -f /usr/bin/dumpzilla
 rm -rf /opt/snoopgod/forensics/dumpzilla/
-rm -f /usr/share/applications/blackbuntu-dumpzilla.desktop
+rm -f /usr/share/applications/snoopgod-dumpzilla.desktop
 rm -f /usr/share/icons/snoopgod/dumpzilla.png
