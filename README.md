@@ -1,6 +1,6 @@
 # Packages
 
-Official packages repository of SnoopGod Linux operating system
+Official `packages` repository of SnoopGod Linux operating system
 
 * * *
 
