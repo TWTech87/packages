@@ -18,6 +18,7 @@ Official packages repository of SnoopGod Linux operating system
 - [cge](http://www.blackangels.it/)
 - [commix](https://github.com/commixproject/commix)
 - [exe2hex](https://github.com/acjsec/exe2bam)
+- [exploitdb](https://gitlab.com/exploit-database/exploitdb)
 - [jexboss](https://github.com/joaomatosf/jexboss)
 - [libenom](https://github.com/Bounteous17/libenom)
 - [routersploit](https://github.com/threat9/routersploit)
