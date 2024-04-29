@@ -3,6 +3,6 @@ Version=1.0
 Categories=Information Gathering;
 Exec=sh -c 'smtp-user-enum; $SHELL'
 Icon=/usr/share/icons/snoopgod/default.png
-Name=SMTP User Enum
+Name=SMTP User-Enum
 Terminal=true
 Type=Application

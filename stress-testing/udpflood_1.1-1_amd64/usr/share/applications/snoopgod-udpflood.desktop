@@ -3,6 +3,6 @@ Version=1.0
 Categories=Stress Testing;
 Exec=sh -c 'udpflood --help; $SHELL'
 Icon=/usr/share/icons/snoopgod/default.png
-Name=Udpflood
+Name=UDP Flood
 Terminal=true
 Type=Application

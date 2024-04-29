@@ -3,6 +3,6 @@ Version=1.0
 Categories=Stress Testing;
 Exec=sh -c 'rtpflood --help; $SHELL'
 Icon=/usr/share/icons/snoopgod/default.png
-Name=Rtpflood
+Name=RTP Flood
 Terminal=true
 Type=Application

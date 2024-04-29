@@ -3,6 +3,6 @@ Version=1.0
 Categories=Cracking;
 Exec=sh -c 'rsmangler --help; $SHELL'
 Icon=/usr/share/icons/snoopgod/default.png
-Name=Rsmangler
+Name=RS Mangler
 Terminal=true
 Type=Application

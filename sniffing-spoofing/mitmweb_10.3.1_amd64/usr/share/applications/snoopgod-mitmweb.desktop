@@ -3,6 +3,6 @@ Version=1.0
 Categories=Sniffing - Spoofing;
 Exec=sh -c 'mitmweb --help; $SHELL'
 Icon=/usr/share/icons/snoopgod/mitmweb.png
-Name=Mitmweb
+Name=MITM Web
 Terminal=true
 Type=Application

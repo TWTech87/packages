@@ -3,6 +3,6 @@ Version=1.0
 Categories=Sniffing - Spoofing;
 Exec=sh -c 'mitmdump --help; $SHELL'
 Icon=/usr/share/icons/snoopgod/mitmdump.png
-Name=Mitmdump
+Name=MITM Dmp
 Terminal=true
 Type=Application
