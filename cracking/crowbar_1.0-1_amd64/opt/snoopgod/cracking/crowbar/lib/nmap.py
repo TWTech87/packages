@@ -23,7 +23,7 @@ class Nmap:
     def port_scan(self, ip_list, port):
         result = []
         ip = []
-        open_port = re.compile("Host:\s([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})\s\(\)\s+Ports:\s+%s" % port)
+        open_port = re.compile("Host:\\s([0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3})\\s\\(\\)\\s+Ports:\\s+%s" % port)
 
         tmpfile = tempfile.NamedTemporaryFile(mode='w+t')
         tmpfile_name = tmpfile.name

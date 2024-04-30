@@ -12,7 +12,7 @@ from subprocess import call
 
 ###############################################################################################################
 
-magicpath = 'C:\WINDOWS\system32\magic' # Only in Windows, path to magic file (Read Manual in www.dumpzilla.org)
+magicpath = 'C:\\WINDOWS\\system32\\magic' # Only in Windows, path to magic file (Read Manual in www.dumpzilla.org)
 
 watchsecond = 4 # --Watch option: Seconds update. (NO Windows)
 python3_path = "" # Python 3.x path (NO Windows). Example: /usr/bin/python3.2

@@ -37,7 +37,7 @@ class GenericChecks:
             sys.exit(1)
         if path.endswith("txt" or "php"):
             self.url = re.findall(
-                re.compile('(.+?)/[A-Za-z0-9]+\.txt|php'), self.url)[0]
+                re.compile('(.+?)/[A-Za-z0-9]+\\.txt|php'), self.url)[0]
 
     # Check if directory is listing
     def DirectoryListing(self, relPath):

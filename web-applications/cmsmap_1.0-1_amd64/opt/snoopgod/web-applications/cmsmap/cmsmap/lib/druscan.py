@@ -64,7 +64,7 @@ class DruScan:
         msg = "Checking Drupal version ..."
         report.verbose(msg)
         requester.request(self.url + '/CHANGELOG.txt', data=None)
-        regex = 'Drupal (\d+\.\d+),'
+        regex = 'Drupal (\\d+\\.\\d+),'
         pattern = re.compile(regex)
         version = re.findall(pattern, requester.htmltext)
         if version:
@@ -176,7 +176,7 @@ class DruScan:
         report.message(msg)
         for usernum in range(1, 50):
             requester.request(self.url + self.quser + str(usernum), data=None)
-            regex = "users\/(.+?)\?destination"
+            regex = "users\\/(.+?)\\?destination"
             pattern = re.compile(regex)
             user = re.findall(pattern, requester.htmltext)
             self.usernames = self.usernames + user

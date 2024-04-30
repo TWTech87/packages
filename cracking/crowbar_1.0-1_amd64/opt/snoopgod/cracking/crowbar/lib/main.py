@@ -100,9 +100,9 @@ class Main:
         self.crowbar_readme = "https://github.com/galkan/crowbar/blob/master/README.md"
 
         self.openvpn_path = "/usr/sbin/openvpn"
-        self.vpn_failure = re.compile("SIGTERM\[soft,auth-failure\] received, process exiting")
+        self.vpn_failure = re.compile("SIGTERM\\[soft,auth-failure\\] received, process exiting")
         self.vpn_success = re.compile("Initialization Sequence Completed")
-        self.vpn_remote_regex = re.compile("^\s+remote\s[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\s[0-9]{1,3}")
+        self.vpn_remote_regex = re.compile("^\\s+remote\\s[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\s[0-9]{1,3}")
         self.vpn_warning = "Warning! Both \"remote\" options were used at the same time. But command line \"remote\" options will be used!"
         self.vpn_error_in_use = "Address already in use (errno=98)"
 
@@ -111,7 +111,7 @@ class Main:
         self.rdp_success_ins_priv = "insufficient access privileges"
         self.rdp_success_account_locked = "alert internal error"
         self.rdp_error_host_down = "ERRCONNECT_CONNECT_FAILED"  # [0x00020006] [0x00020014]
-        self.rdp_error_display = "Please check that the \$DISPLAY environment variable is properly set."
+        self.rdp_error_display = "Please check that the \\$DISPLAY environment variable is properly set."
 
         self.vncviewer_path = "/usr/bin/vncviewer"
         self.vnc_success = "Authentication successful"
@@ -420,7 +420,7 @@ class Main:
                 break
             # Errors
             elif re.search(self.rdp_error_display, str(line)):
-                mess = "Please check \$DISPLAY is properly set. See README.md %s" % self.crowbar_readme
+                mess = "Please check \\$DISPLAY is properly set. See README.md %s" % self.crowbar_readme
                 raise CrowbarExceptions(mess)
             elif re.search(self.rdp_error_host_down, str(line)):
                 mess = "Host isn't up"

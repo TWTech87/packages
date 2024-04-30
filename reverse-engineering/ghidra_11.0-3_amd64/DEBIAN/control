@@ -1,0 +1,6 @@
+Package: ghidra
+Version: 11.0.3
+Priority: optional
+Architecture: amd64
+Maintainer: SnoopGod <contact@snoopgod.com>
+Description: Ghidra is a free and open source reverse engineering tool developed by the National Security Agency of the United States.

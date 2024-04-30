@@ -2,7 +2,7 @@
 Version=1.0
 Categories=Reverse Engineering;
 Exec=/usr/bin/java -jar /opt/snoopgod/reverse-engineering/javasnoop/javasnoop.jar
-Icon=/usr/share/icons/snoopgod/default.png
+Icon=/usr/share/icons/snoopgod/javasnoop.png
 Name=Javasnoop
 Terminal=false
 Type=Application

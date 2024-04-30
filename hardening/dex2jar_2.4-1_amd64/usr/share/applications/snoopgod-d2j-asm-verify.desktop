@@ -1,8 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Categories=Hardening;
-Exec=sh -c 'd2j-asm-verify --help; $SHELL'
-Icon=/usr/share/icons/snoopgod/default.png
-Name=D2J ASM-Verify
-Terminal=true
-Type=Application

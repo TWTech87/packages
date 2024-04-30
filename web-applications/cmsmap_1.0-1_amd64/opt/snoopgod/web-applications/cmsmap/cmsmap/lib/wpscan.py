@@ -82,7 +82,7 @@ class WPScan:
         msg = "Checking WordPress version ..."
         report.verbose(msg)
         requester.request(self.url + '/readme.html', data=None)
-        regex = '<br />.* (\d+\.\d+[\.\d+]*)\n</h1>'
+        regex = '<br />.* (\\d+\\.\\d+[\\.\\d+]*)\n</h1>'
         pattern = re.compile(regex)
         self.currentVer = re.findall(pattern, requester.htmltext)
         if self.currentVer:
@@ -90,7 +90,7 @@ class WPScan:
             report.info(msg)
         else:
             requester.request(self.url, data=None)           
-            self.currentVer = re.findall('<meta name="generator" content="WordPress (\d+\.\d+[\.\d+]*)"', requester.htmltext)
+            self.currentVer = re.findall('<meta name="generator" content="WordPress (\\d+\\.\\d+[\\.\\d+]*)"', requester.htmltext)
             if self.currentVer:
                 msg = "Wordpress Version: " + self.currentVer[0]
                 report.info(msg)
@@ -147,7 +147,7 @@ class WPScan:
         msg = "Enumerating Wordpress usernames via \"Feed\" ..."
         report.verbose(msg)
         requester.request(self.url + self.feed, data=None) 
-        wpUsers = re.findall("<dc:creator>[<!\[CDATA\[]*(.+?)[\]\]>]*</dc:creator>",
+        wpUsers = re.findall("<dc:creator>[<!\\[CDATA\\[]*(.+?)[\\]\\]>]*</dc:creator>",
             requester.htmltext)
         if wpUsers:
             self.usernames = wpUsers + self.usernames
@@ -239,7 +239,7 @@ class WPScan:
         self.pluginsFoundVers = {}
         for pluginFound in self.pluginsFound:
             requester.request(self.url+self.pluginPath+pluginFound+"/readme.txt", data=None)
-            pluginVer = re.findall('Stable tag: (\d+\.\d+[\.\d+]*)', requester.htmltext)
+            pluginVer = re.findall('Stable tag: (\\d+\\.\\d+[\\.\\d+]*)', requester.htmltext)
             # Add plugin version
             if pluginVer : 
                 self.pluginsFoundVers[pluginFound] = pluginVer[0]

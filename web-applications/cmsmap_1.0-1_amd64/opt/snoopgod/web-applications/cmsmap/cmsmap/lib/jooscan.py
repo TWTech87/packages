@@ -139,7 +139,7 @@ class JooScan:
     # Find Joomla users via Feed (Feed is available only in old versions of Joomla)
     def JooFeed(self):
         requester.request(self.url + '/?format=feed', data=None)
-        jooUsers = re.findall("<author>(.+?) \((.+?)\)</author>", requester.htmltext, re.IGNORECASE)
+        jooUsers = re.findall("<author>(.+?) \\((.+?)\\)</author>", requester.htmltext, re.IGNORECASE)
         if jooUsers:
             msg = "Enumerating Joomla Usernames via \"Feed\" ..."
             report.message(msg)

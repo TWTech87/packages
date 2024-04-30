@@ -1,0 +1,3 @@
+rm -f /usr/bin/ghidra
+rm -rf /opt/snoopgod/reverse-engineering/ghidra/
+rm -f /usr/share/applications/snoopgod-ghidra.desktop

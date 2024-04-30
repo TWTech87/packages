@@ -228,15 +228,15 @@ class CoreUpdate:
     # Update Plugins from local exploit-db
     def UpdateLocalPlugins(self):
         local_plugins = [('wordpress', 
-                          "grep -iREho wp-content/plugins/\(.+?\)/ "+self.edbpath+
+                          "grep -iREho wp-content/plugins/\\(.+?\\)/ "+self.edbpath+
                           "/exploits/php | cut -d '/' -f 3 | sort -u | tail -n+3",
                           initializer.wp_plugins_small),
                          ('joomla',
-                          "grep -iREho \?option=\(com_\\w*\)\& "+self.edbpath+
+                          "grep -iREho \\?option=\\(com_\\w*\\)\\& "+self.edbpath+
                           "/exploits/ | cut -d '&' -f 1 | cut -d '=' -f 2 | sort -u ",
                           initializer.joo_plugins_small),
                          ('drupal',
-                           "grep -iREho \/components\/\(com_\\w*\)\/ "+self.edbpath+
+                           "grep -iREho \\/components\\/\\(com_\\w*\\)\\/ "+self.edbpath+
                            "/exploits/ | cut -d '/' -f 3 |  cut -d'.' -f1 | sort -u",
                            initializer.dru_plugins_small)]
         for cms_type, grep_cmd, cms_small_plugin_path in local_plugins :

@@ -459,7 +459,7 @@ class loader(multiprocessing.Process):
     def run(self):
         self.permute()
         #Remove items from the list that will be in the permutation set.
-        permute_filter = re.compile("^[a-zA-Z0-9]{" + str(self.permute_len) + "}\.")
+        permute_filter = re.compile("^[a-zA-Z0-9]{" + str(self.permute_len) + "}\\.")
         #A list of subdomains is the input
         for s in self.subdomains:
             if not permute_filter.match(s):

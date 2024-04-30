@@ -15,7 +15,7 @@ chmod +x /opt/snoopgod/hardening/dex2jar/d2j-jar-access.sh
 chmod +x /opt/snoopgod/hardening/dex2jar/d2j-jar-weaver.sh
 chmod +x /opt/snoopgod/hardening/dex2jar/d2j-jasmin2jar.sh
 chmod +x /opt/snoopgod/hardening/dex2jar/d2j-smali.sh
-chmod +x /opt/snoopgod/hardening/dex2jar/d2j-std-apk.sh
+chmod +x /opt/snoopgod/hardening/dex2jar/d2j-std-zip.sh
 ln -s /opt/snoopgod/hardening/dex2jar/d2j-apk-sign.sh /usr/bin/d2j-apk-sign
 ln -s /opt/snoopgod/hardening/dex2jar/d2j-asm-verify.sh /usr/bin/d2j-asm-verify
 ln -s /opt/snoopgod/hardening/dex2jar/d2j-baksmali.sh /usr/bin/d2j-baksmali
@@ -32,4 +32,4 @@ ln -s /opt/snoopgod/hardening/dex2jar/d2j-jar-access.sh /usr/bin/d2j-jar-access
 ln -s /opt/snoopgod/hardening/dex2jar/d2j-jar-weaver.sh /usr/bin/d2j-jar-weaver
 ln -s /opt/snoopgod/hardening/dex2jar/d2j-jasmin2jar.sh /usr/bin/d2j-jasmin2jar
 ln -s /opt/snoopgod/hardening/dex2jar/d2j-smali.sh /usr/bin/d2j-smali
-ln -s /opt/snoopgod/hardening/dex2jar/d2j-std-apk.sh /usr/bin/d2j-std-apk
+ln -s /opt/snoopgod/hardening/dex2jar/d2j-std-zip.sh /usr/bin/d2j-std-zip

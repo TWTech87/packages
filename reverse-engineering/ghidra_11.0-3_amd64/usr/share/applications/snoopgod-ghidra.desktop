@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Categories=Reverse Engineering;
+Exec="/opt/snoopgod/reverse-engineering/ghidra/ghidraRun" %U
+Icon=/usr/share/icons/snoopgod/ghidra.png
+Name=Ghidra
+Terminal=false
+Type=Application

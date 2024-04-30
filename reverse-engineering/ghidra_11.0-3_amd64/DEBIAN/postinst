@@ -1,0 +1,3 @@
+mkdir -p /opt/snoopgod/reverse-engineering/
+chmod +x /opt/snoopgod/reverse-engineering/ghidra/ghidraRun
+ln -s /opt/snoopgod/reverse-engineering/ghidra/ghidraRun /usr/bin/ghidra
