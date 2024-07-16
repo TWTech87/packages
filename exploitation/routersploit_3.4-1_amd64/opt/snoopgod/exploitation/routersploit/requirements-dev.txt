@@ -8,3 +8,4 @@ pytest-forked
 pytest-xdist
 flake8
 git+git://github.com/threat9/threat9-test-bed
+setuptools>=70.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
