@@ -8,3 +8,4 @@ pytest-forked
 pytest-xdist
 flake8
 git+git://github.com/threat9/threat9-test-bed
+urllib3>=2.6.3 # not directly required, pinned by Snyk to avoid a vulnerability
