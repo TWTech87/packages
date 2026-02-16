@@ -8,3 +8,4 @@ pytest-forked
 pytest-xdist
 flake8
 git+git://github.com/threat9/threat9-test-bed
+cryptography>=46.0.5 # not directly required, pinned by Snyk to avoid a vulnerability
